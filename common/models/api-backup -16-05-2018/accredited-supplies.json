@@ -1,0 +1,46 @@
+{
+  "name": "accredited_supplies",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "supplier_id": {
+      "type": "number",
+      "id": true
+    },
+    "contractor_id": {
+      "type": "number"
+    },
+    "supplier_name": {
+      "type": "string"
+    },
+    "created_date": {
+      "type": "number"
+    },
+    "updated_date": {
+      "type": "number"
+    },
+    "status": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

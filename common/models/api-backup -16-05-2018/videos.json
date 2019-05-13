@@ -1,0 +1,42 @@
+{
+  "name": "videos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "status": {
+      "type": "number"
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    },
+    "priority": {
+      "type": "number"
+    },
+	"logo_image": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "sub_specialization_mapping",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "sub_specialization_id": {
+      "type": "number"
+    },
+    "specialization_id": {
+      "type": "number"
+    },
+    "contractor_id" :{
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,157 @@
+{
+    "_meta": {
+        "sources": [
+            "loopback/common/models",
+            "loopback/server/models",
+            "../common/models",
+            "./models"
+        ],
+        "mixins": [
+            "loopback/common/mixins",
+            "loopback/server/mixins",
+            "../common/mixins",
+            "./mixins"
+        ]
+    },
+    "User": {
+        "dataSource": "mssql"
+    },
+    "AccessToken": {
+        "dataSource": "mssql",
+        "public": false
+    },
+    "ACL": {
+        "dataSource": "mssql",
+        "public": false
+    },
+    "RoleMapping": {
+        "dataSource": "mssql",
+        "public": false,
+        "options": {
+            "strictObjectIDCoercion": true
+        }
+    },
+    "Role": {
+        "dataSource": "mssql",
+        "public": false
+    },
+    "app_access": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "app_details": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "city": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "contractor_affiliation_master": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "contractor_affiliation_mapping": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "contractor_profile": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "contractor_specialization_master": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "equipments_mapping": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "equipments_master": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "project_photos": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "projects": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "type_of_housing_master": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "work_group": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "container": {
+        "dataSource": "storage",
+        "public": true
+    },
+    "type_of_housing_mapping": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "contractor_specialization_mapping": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "accredited_supplies": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "construction_stage_master": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "construction_stage_mapping": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "Email": {
+        "dataSource": "myEmailDataSource"
+    },
+    "books": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "pages": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "chapters": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "videos": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "municipality": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "sub_specialization_master": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "sub_specialization_mapping": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "app_login": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "app_users": {
+        "dataSource": "mssql",
+        "public": true
+    },
+    "sub_type_of_housing_master": {
+        "dataSource": "mssql",
+        "public": true
+    }
+}

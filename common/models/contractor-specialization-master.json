@@ -1,0 +1,43 @@
+{
+  "name": "contractor_specialization_master",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "specialization_id": {
+      "type": "number",
+      "id": true
+    },
+    "specialization_name": {
+      "type": "string"
+    },
+    "created_date": {
+      "type": "number"
+    },
+    "updated_date": {
+      "type": "number"
+    },
+    "status": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

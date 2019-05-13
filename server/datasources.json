@@ -1,0 +1,34 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mssql": {
+    "host": "apcnhpbdbdv01.cc9o8mvrbwyt.ap-southeast-1.rds.amazonaws.com",
+    "port": 1433,
+    "url": "",
+    "database": "ambuja_philippines",
+    "password": "HpDf3dK#",
+    "name": "mssql",
+    "user": "ambuja_philippines_user",
+    "connector": "mssql"
+  },
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "C:/Archana/Lafarge_QA_setup/server/storage"
+  },
+  "myEmailDataSource": {
+    "name": "myEmailDataSource",
+    "connector": "mail",
+    "transports": [
+      {
+	  	"type": "smtp",
+		"host": "smtp.ap.holcim.net",
+        "port": 25,
+        "secure": false			
+		}
+    ]
+  }
+}

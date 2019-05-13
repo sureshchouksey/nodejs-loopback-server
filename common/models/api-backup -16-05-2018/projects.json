@@ -1,0 +1,97 @@
+{
+  "name": "projects",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "project_id": {
+      "type": "number",
+      "id": true
+    },
+    "contractor_id": {
+      "type": "number"
+    },
+    "project_name": {
+      "type": "string"
+    },
+    "project_type": {
+      "type": "string"
+    },
+    "project_cover_photo": {
+      "type": "string"
+    },
+    "project_location": {
+      "type": "string"
+    },
+    "city_id": {
+      "type": "number"
+    },
+    "zip": {
+      "type": "number"
+    },
+    "contact_reference_mobile": {
+      "type": "string"
+    },
+    "contact_reference_landline": {
+      "type": "string"
+    },
+    "construction_area": {
+      "type": "number"
+    },
+    "measurement_unit": {
+      "type": "string"
+    },
+    "project_cost": {
+      "type": "number"
+    },
+    "project_start_date": {
+      "type": "number"
+    },
+    "project_completion_date": {
+      "type": "number"
+    },
+    "project_duration_months": {
+      "type": "number"
+    },
+    "project_duration_years": {
+      "type": "number"
+    },
+    "project_bookmark": {
+      "type": "boolean"
+    },
+    "created_date": {
+      "type": "number"
+    },
+    "updated_date": {
+      "type": "number"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "project_status": {
+      "type": "string"
+    },
+    "municipality_id": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

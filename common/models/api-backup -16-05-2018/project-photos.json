@@ -1,0 +1,46 @@
+{
+  "name": "project_photos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "photo_id": {
+      "type": "number",
+      "id": true
+    },
+    "project_id": {
+      "type": "number"
+    },
+    "project_photo_source": {
+      "type": "string"
+    },
+    "created_date": {
+      "type": "number"
+    },
+    "updated_date": {
+      "type": "number"
+    },
+    "status": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}
